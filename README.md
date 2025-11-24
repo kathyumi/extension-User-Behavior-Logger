@@ -46,8 +46,7 @@ CLICK-LOGGER-V3
 
 
 🇯🇵 content.js の概要 (About content.js)
-
-content.js は実際のデータキャプチャロジックの 100% を担当します。
+content.js は実際のデータキャプチャロジックの 100% を担当します。 
 約 700 行の単一ファイルになっていますが、Chrome の仕様上、content script は直接モジュール化できません。
 そのため:
 グローバル衝突を避けるために即時関数(IIFE)でラップ
@@ -55,10 +54,7 @@ window.__ext_logger_v2 という名前空間に安全に格納
 全イベントリスナーを一元管理
 バッチャーと圧縮機能を統合
 
-
-
 🇬🇧 About content.js
-
 content.js contains 100% of the data-capturing logic.
 It is nearly 700 lines long, but this is necessary because content scripts cannot be modularized using ES modules.
 So it is structured with:
